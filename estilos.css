@@ -276,6 +276,27 @@ footer{
   font-size:.85rem;opacity:.7;
 }
 
+
+/* ============================================
+   EMERGENCIAS
+   Reutiliza .carta con acento tierra
+   ============================================ */
+.emergencias{background:var(--lino)}
+.emergencia{border-left:10px solid var(--tierra)}
+.emergencia h3{color:var(--tierra)}
+.emergencia .emoji{background:var(--lino)}
+.aviso{
+  position:relative;z-index:1;
+  margin-top:36px;
+  background:var(--musgo);
+  color:var(--crema);
+  border:3px solid var(--corteza);
+  border-radius:var(--radius-tag);
+  box-shadow:0 5px 0 var(--corteza);
+  padding:16px 24px;
+  font-weight:700;
+  text-align:center;
+}
 /* ============================================
    RESPONSIVE
    ============================================ */
