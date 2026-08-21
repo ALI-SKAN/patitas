@@ -1,15 +1,16 @@
-# Proyecto web mascotas
-este es un proyecto inicial de una web estatica para github
-## Tecnologias usadas
-- HTML5
-- CSS3
-- IA Claude
+# 🐾 Patitas · Guía y cariño para tu mascota
 
-## Como ver la pagina
-Abre el archivo index.html en tu navegador de preferencia
+Sitio web estático con guías de cuidado para perros, gatos, aves y peces,
+consejos de bienestar diario, primeros auxilios y fomento de la adopción
+responsable.
 
-## Autor
-Alí Contreras Espeza
+🔗 **Ver en línea:** https://ali-skan.github.io/patitas/
 
-## Fecha
-13/08/2026
+## Tecnologías
+
+- HTML5 semántico
+- CSS3 (variables personalizadas, Grid y Flexbox, diseño responsive)
+- Tipografías Google Fonts: Baloo 2 y Nunito
+- GitHub Pages para el despliegue
+
+## Estructura del proyecto
