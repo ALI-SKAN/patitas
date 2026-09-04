@@ -5,16 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Guías claras, consejos de veterinarios y fomento de la adopción responsable para perros, gatos, aves y peces. Únete a la comunidad Patitas.">
 <meta name="theme-color" content="#5C7350">
+ 
+<!-- Open Graph: mejora cómo se ve el enlace al compartirlo en redes -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Patitas · Guía y cariño para tu mascota">
+<meta property="og:description" content="Guías claras, consejos de veterinarios y fomento de la adopción responsable para perros, gatos, aves y peces.">
+<meta property="og:locale" content="es_PE">
+ 
 <title>Patitas · Guía y cariño para tu mascota</title>
+ 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilos.css">
+ 
+<style>
+  /* Enlace de salto para accesibilidad (usuarios de teclado y lector de pantalla) */
+  .salto {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: #5C7350;
+    color: #FBF8F1;
+    padding: 0.6rem 1rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    z-index: 100;
+  }
+  .salto:focus { left: 1rem; }
+ 
+  /* Desplazamiento suave al navegar por anclas, respetando preferencias del usuario */
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+</style>
 </head>
 <body>
-
+ 
+<a class="salto" href="#inicio">Saltar al contenido principal</a>
+ 
 <header>
-  <nav class="nav" aria-label="Navegación Principal">
+  <nav class="nav" aria-label="Navegación principal">
     <a class="logo" href="#inicio" aria-label="Ir al inicio de Patitas">
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <ellipse cx="7" cy="7" rx="2.2" ry="3" fill="#A8B79A"/>
@@ -26,35 +56,35 @@
       Patitas
     </a>
     <ul>
-      <li><a class="activo" href="#inicio">Inicio</a></li>
-      <li><a href="#especies">ESPECIES</a></li>
-      <li><a href="#consejos">CONSEJOS</a></li>
-      <li><a href="#emergencias">EMERGENCIAS</a></li>
-      <li><a href="#adopcion">ADOPCIONkhadgjhsbguhe</a></li>
+      <li><a class="activo" href="#inicio" aria-current="page">Inicio</a></li>
+      <li><a href="#especies">Especies</a></li>
+      <li><a href="#consejos">Consejos</a></li>
+      <li><a href="#emergencias">Emergencias</a></li>
+      <li><a href="#adopcion">Adopción</a></li>
     </ul>
   </nav>
 </header>
-
+ 
 <main id="inicio">
-
-  <section class="hero">
-    <h1>Cuidar a tu mascota es más <span class="tierra">fácil</span> cuando sabes <span class="musgo">cómo</span></h1>
+ 
+  <section class="hero" aria-labelledby="titulo-hero">
+    <h1 id="titulo-hero">Cuidar a tu mascota es más <span class="tierra">fácil</span> cuando sabes <span class="musgo">cómo</span></h1>
     <p>Guías claras, consejos de veterinarios y mucho cariño para perros, gatos y todos los amigos peludos, plumosos o escamosos de la casa.</p>
     <a class="btn" href="#especies">Explorar guías</a>
   </section>
-
+ 
   <div class="huellas" aria-hidden="true">
     <span>🐾 PERROS · 🐾 GATOS · 🐾 AVES · 🐾 PECES · 🐾 CONEJOS · 🐾 HÁMSTERS · 🐾 PERROS · 🐾 GATOS · 🐾 AVES · 🐾 PECES · 🐾 CONEJOS · 🐾 HÁMSTERS ·&nbsp;</span>
   </div>
-
+ 
   <div class="con-correa">
-
-    <section id="especies">
+ 
+    <section id="especies" aria-labelledby="titulo-especies">
       <div class="contenedor">
         <span class="placa">Conoce a tu compañero</span>
-        <h2 class="titulo-seccion">Cada especie, su propio manual</h2>
+        <h2 class="titulo-seccion" id="titulo-especies">Cada especie, su propio manual</h2>
         <p class="intro-seccion">No todos los animales necesitan lo mismo. Aquí encuentras lo esencial de cada uno para empezar con buena pata.</p>
-
+ 
         <div class="grid-especies">
           <article class="carta">
             <span class="emoji" aria-hidden="true">🐶</span>
@@ -62,21 +92,21 @@
             <p>Necesitan paseos diarios, rutina y socialización desde cachorros. El juego es su forma de aprender y de quererte.</p>
             <span class="dato">Dato: mueven la cola hacia la derecha cuando están felices.</span>
           </article>
-
+ 
           <article class="carta">
             <span class="emoji" aria-hidden="true">🐱</span>
             <h3>Gatos</h3>
             <p>Independientes pero cariñosos a su manera. Un rascador, ventanas seguras y arenero limpio son sus básicos.</p>
             <span class="dato">Dato: ronronean también para calmarse a sí mismos.</span>
           </article>
-
+ 
           <article class="carta">
             <span class="emoji" aria-hidden="true">🦜</span>
             <h3>Aves</h3>
             <p>Inteligentes y sociales: necesitan jaulas amplias, juguetes para picotear y tiempo fuera de la jaula cada día.</p>
             <span class="dato">Dato: los loros pueden vivir más de 50 años.</span>
           </article>
-
+ 
           <article class="carta">
             <span class="emoji" aria-hidden="true">🐟</span>
             <h3>Peces</h3>
@@ -86,39 +116,39 @@
         </div>
       </div>
     </section>
-
-    <section id="consejos" class="fondo-musgo">
+ 
+    <section id="consejos" class="fondo-musgo" aria-labelledby="titulo-consejos">
       <div class="contenedor">
         <span class="placa">Bienestar diario</span>
-        <h2 class="titulo-seccion">Consejos que toda mascota agradece</h2>
+        <h2 class="titulo-seccion" id="titulo-consejos">Consejos que toda mascota agradece</h2>
         <p class="intro-seccion">Pequeños hábitos que marcan una gran diferencia en su salud y felicidad.</p>
-
+ 
         <div class="lista-consejos">
           <article class="consejo">
             <h3><span class="icono" aria-hidden="true">🍖</span> Alimentación a su medida</h3>
             <p>Elige alimento según edad, tamaño y especie. Evita darles comida de humanos: el chocolate, la cebolla y las uvas son tóxicos para perros y gatos.</p>
           </article>
-
+ 
           <article class="consejo">
             <h3><span class="icono" aria-hidden="true">💉</span> Visitas al veterinario</h3>
             <p>Un chequeo anual y el calendario de vacunas al día previenen la mayoría de problemas. La desparasitación también es clave.</p>
           </article>
-
+ 
           <article class="consejo">
             <h3><span class="icono" aria-hidden="true">🎾</span> Juego y ejercicio</h3>
             <p>El aburrimiento genera estrés y travesuras. Dedica al menos 20 minutos diarios a jugar activamente con tu mascota.</p>
           </article>
-
+ 
           <article class="consejo">
             <h3><span class="icono" aria-hidden="true">💧</span> Agua siempre fresca</h3>
             <p>Cambia el agua todos los días y lava el bebedero con frecuencia. En verano, coloca más de un punto de agua en casa.</p>
           </article>
-
+ 
           <article class="consejo">
             <h3><span class="icono" aria-hidden="true">🛁</span> Higiene sin exagerar</h3>
             <p>Cepilla el pelaje varias veces por semana. Los baños en exceso dañan la piel: consulta la frecuencia ideal para tu especie.</p>
           </article>
-
+ 
           <article class="consejo">
             <h3><span class="icono" aria-hidden="true">🏠</span> Un rincón propio</h3>
             <p>Cama, manta o escondite: todo animal necesita un lugar tranquilo y suyo donde descansar sin interrupciones.</p>
@@ -126,13 +156,13 @@
         </div>
       </div>
     </section>
-    
-    <section id="emergencias" class="emergencias">
+ 
+    <section id="emergencias" class="emergencias" aria-labelledby="titulo-emergencias">
       <div class="contenedor">
         <span class="placa">Actúa rápido</span>
-        <h2 class="titulo-seccion">Qué hacer en una emergencia</h2>
+        <h2 class="titulo-seccion" id="titulo-emergencias">Qué hacer en una emergencia</h2>
         <p class="intro-seccion">Los primeros minutos importan. Ninguna de estas acciones reemplaza la atención veterinaria: son solo el puente hasta llegar a la clínica.</p>
-
+ 
         <div class="grid-especies">
           <article class="carta emergencia">
             <span class="emoji" aria-hidden="true">🚨</span>
@@ -140,21 +170,21 @@
             <p>No induzcas el vómito sin indicación profesional. Lleva contigo el envase o los restos de lo que ingirió.</p>
             <span class="dato">Riesgos comunes: chocolate, cebolla, uvas y limpiadores.</span>
           </article>
-
+ 
           <article class="carta emergencia">
             <span class="emoji" aria-hidden="true">🌡️</span>
             <h3>Golpe de calor</h3>
             <p>Llévalo a la sombra y moja su cuerpo con agua fresca, nunca helada. Traslado inmediato al veterinario.</p>
             <span class="dato">Señales: jadeo intenso, encías rojas, tambaleo.</span>
           </article>
-
+ 
           <article class="carta emergencia">
             <span class="emoji" aria-hidden="true">🩹</span>
             <h3>Herida sangrante</h3>
             <p>Presiona con gasa limpia durante cinco minutos sin levantarla para revisar. Evita los torniquetes caseros.</p>
             <span class="dato">Nunca uses alcohol ni agua oxigenada en heridas abiertas.</span>
           </article>
-
+ 
           <article class="carta emergencia">
             <span class="emoji" aria-hidden="true">😮‍💨</span>
             <h3>Atragantamiento</h3>
@@ -162,31 +192,31 @@
             <span class="dato">Cuidado con huesos cocidos y juguetes pequeños.</span>
           </article>
         </div>
-
+ 
         <p class="aviso">📞 Ten siempre a la vista el número de tu veterinario y el de una clínica de urgencias 24 horas.</p>
       </div>
     </section>
-
-    <section id="adopcion" class="adopcion">
+ 
+    <section id="adopcion" class="adopcion" aria-labelledby="titulo-adopcion">
       <div class="contenedor">
         <div class="caja-adopcion">
           <span class="placa">Adopta, no compres</span>
-          <h2>Miles de patitas esperan un hogar</h2>
+          <h2 id="titulo-adopcion">Miles de patitas esperan un hogar</h2>
           <p>Adoptar salva dos vidas: la del animal que llega a tu casa y la del que ocupa su lugar en el refugio. El proceso es más sencillo de lo que crees.</p>
-          <div class="pasos">
-            <span class="paso">1 · Visita un refugio</span>
-            <span class="paso">2 · Conoce al animal</span>
-            <span class="paso">3 · Prepara tu hogar</span>
-            <span class="paso">4 · ¡Bienvenido a casa!</span>
-          </div>
+          <ol class="pasos">
+            <li class="paso">Visita un refugio</li>
+            <li class="paso">Conoce al animal</li>
+            <li class="paso">Prepara tu hogar</li>
+            <li class="paso">¡Bienvenido a casa!</li>
+          </ol>
           <a class="btn secundario" href="adopcion.html">Quiero adoptar</a>
         </div>
       </div>
     </section>
-
+ 
   </div>
 </main>
-
+ 
 <footer>
   <div class="pie">
     <div>
@@ -202,17 +232,18 @@
       </a>
       <p>Guías y consejos para quienes comparten su vida con un animal. Hecho con cariño y colores de la naturaleza.</p>
     </div>
-
-    <div>
+ 
+    <nav aria-label="Navegación del pie de página">
       <h4>Navegación</h4>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#especies">Especies</a></li>
         <li><a href="#consejos">Consejos</a></li>
+        <li><a href="#emergencias">Emergencias</a></li>
         <li><a href="#adopcion">Adopción</a></li>
       </ul>
-    </div>
-
+    </nav>
+ 
     <div>
       <h4>Recursos</h4>
       <ul>
@@ -222,21 +253,21 @@
         <li><a href="#especies">Fichas por especie</a></li>
       </ul>
     </div>
-
+ 
     <div>
       <h4>Contacto</h4>
       <ul class="contacto">
         <li>📍 Lima, Perú</li>
-        <li>✉️ hola@patitas.pe</li>
-        <li>📞 +51 999 999 999</li>
+        <li>✉️ <a href="mailto:hola@patitas.pe">hola@patitas.pe</a></li>
+        <li>📞 <a href="tel:+51999999999">+51 999 999 999</a></li>
       </ul>
     </div>
   </div>
-
+ 
   <div class="pie-legal">
     © 2026 Patitas · Todos los derechos reservados · Adopta, no compres 🐾
   </div>
 </footer>
-
+ 
 </body>
 </html>
